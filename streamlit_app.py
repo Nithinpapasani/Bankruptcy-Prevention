@@ -86,16 +86,20 @@ def main():
     st.markdown("""
     <style>
         .main-header {
-            font-size: 2.7rem; 
-            font-weight: 700; 
-            color: #1f77b4; 
+            font-size: 3.4rem;      /* was 2.7rem */
+            font-weight: 800;
+            color: #1f77b4;
             text-align: center;
         }
         .sub-header {
-            font-size: 1.2rem; 
+            font-size: 1.6rem;      /* was 1.2rem */
             color: #555;
             text-align: center;
             margin-bottom: 1.5rem;
+        }
+        /* Optional: make all H2 headings a bit larger */
+        h2 {
+            font-size: 2rem !important;
         }
         .stProgress > div > div > div > div {
             background: linear-gradient(to right, #ff4b1f, #ff9068);
@@ -339,3 +343,4 @@ Inputs:
 
 if __name__ == "__main__":
     main()
+
